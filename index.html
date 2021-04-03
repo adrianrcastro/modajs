@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ModaJS</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive HTML5 website landing page for developers and startups">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>//firebase script
+    <![endif]-->
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAzqd-E3xcyaxd2_wG9p__HwZcR9SmeXWw",
+            authDomain: "meetrixweb.firebaseapp.com",
+            databaseURL: "https://meetrixweb.firebaseio.com",
+            projectId: "meetrixweb",
+            storageBucket: "",
+            messagingSenderId: "51993953473"
+        };
+        firebase.initializeApp(config);
+    </script>
+    
+</head> 
+
+<body>
+
+    <header id="header" class="header">  
+        <div class="container">       
+            <h1 class="logo">
+                <a class="scrollto" href="index.html">
+                    <span class="text highlight color">Moda.JS</span>
+                </a>
+            </h1><!--//logo-->
+            <nav class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item"><a class="scrollto" href="#hero">Inicio</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#about"> nosotros</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#testimonials">Calzados</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#pricing">Galería</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#contact">Contacto</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div id="hero" class="hero-section">
+
+        <div id="" class="hero-carousel carousel" data-ride="carousel" data-interval="10000">
+
+            <div class="figure-holder-wrapper">
+        		<div class="container">
+            		<div class="row">
+                		<div class="figure-holder">
+                        </div><!--//figure-holder-->
+            		</div><!--//row-->
+        		</div><!--//container-->
+    		</div><!--//figure-holder-wrapper-->
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+
+				<div class="item item-1 active">
+					<div class="item-content container">
+    					<div class="item-content-inner">
+
+				            <h2 class="heading">Mantente a la moda cada vez que puedas hacerlo.</h2>
+
+
+    					</div><!--//item-content-inner-->
+					</div><!--//item-content-->
+				</div><!--//item-->
+
+            </div><!--//carousel-inner-->
+            
+            <!--modal-->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 style="color: #000000"class="modal-title">Registered in Meetrix...</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="form-registered">
+                                    <!--text-box-->
+                                    <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                    </div>
+
+                                    <div style="margin-bottom: 25px" class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                        <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                    </div>
+                                </div>
+                                <!--icon-->
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+                                    <div class="icon-circle">
+                                        <a href="#" class="ifacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+                                    <div class="icon-circle">
+                                        <a href="#" class="igoogle" title="Google"><i class="fa fa-google"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="modal-footer">
+                             <button style="margin-left: 200px"class="btn btn-lg btn-primary btn-block" type="submit">
+                                Sign in</button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+		</div><!--//carousel-->
+    </div><!--//hero-->
+
+    <div id="about" class="about-section">
+        <div class="container text-center">
+            <h2 class="section-title">Sobre Moda.JS</h2>
+            <p class="intro">Moda.JS es una tienda online de ropa y complementos creada en 2021. Este nuevo proyecto nace con la intención de acercar todas nuestras propuestas en moda. Queremos transmitir nuestra dedicación a este mundo y nuestro cuidado por los detalles, y así ofrecerles una forma diferente de combinar todas las prendas de diferentes colecciones.</p>
+
+
+          
+
+            <div class="items-wrapper row">
+                <div class="item col-sm-4 col-xs-12">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img src="assets/images/profile-1.png" alt="image">
+                        </div><!--//figure-holder-->
+                        <h3 class="item-title divide">CEO: James Corden</h3>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-sm-4 col-xs-12">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img  src="assets/images/profile-2.png" alt="image">
+                        </div><!--//figure-holder-->
+                        <h3 class="item-title divide">CO-CEO: Scarlett Cena</h3>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+                <div class="item col-sm-4 col-xs-12">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img src="assets/images/profile-3.png" alt="image">
+                        </div><!--//figure-holder-->
+                        <h3 class="item-title divide">CEO: John Arthur</h3>
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                
+            </div><!--//items-wrapper-->
+        </div><!--//container-->
+    </div><!--//about-section-->
+
+    <div id="testimonials" class="about-section bc">
+        <div class="container">
+            <h2 class="section-title text-center">Calzados</h2>
+    
+            <div class="items-wrapper row text-center">
+                <div class="item col-sm-4 col-xs-12 x">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="img-responsive" src="assets/images/nike1.jpg" alt="image">
+                        </div><!--//figure-holder-->
+                        <h3 class="item-title">Jordan Havoc React</h3>
+
+                    </div><!--//item-inner-->
+                    <a class="btn btn-cta">Comprar ahora</a>
+                </div><!--//item-->
+                <div class="item col-sm-4 col-xs-12 x">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="img-responsive" src="assets/images/nike2.jpg" alt="image">
+                        </div><!--//figure-holder-->
+                        <h3 class="item-title">Jordan React</h3>
+
+                    </div><!--//item-inner-->
+                    <a class="btn btn-cta">Comprar ahora</a>
+                </div><!--//item-->
+                <div class="item col-sm-4 col-xs-12 x">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="img-responsive" src="assets/images/nike3.jpg" alt="image">
+                        </div><!--//figure-holder-->
+                        <h3 class="item-title">Jordan Sneaker</h3>
+                    </div><!--//item-inner-->
+                    <a class="btn btn-cta">Comprar ahora</a>
+                </div><!--//item-->
+            </div><!--//items-wrapper-->
+        </div><!--//container-->
+    </div><!--//testimonials-->
+
+   
+    <div id="pricing" class="pricing-section margin">
+        <div class="container text-center">
+            <h2 class="section-title">Galería</h2>
+            <div class="intro">Tenemos diferentes atuendos para ti!</div>
+       
+                <div class="item col-sm-4 col-xs-12 x">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="img-responsive" src="assets/images/figure-4.jpg" alt="image">
+                        </div><!--//figure-holder-->
+
+                      
+                        
+                        
+                    </div><!--//item-inner-->
+                  
+                </div><!--//item-->
+      
+                <div class="item col-sm-4 col-xs-12 x">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="img-responsive" src="assets/images/figure-5.jpg" alt="image">
+                        </div><!--//figure-holder-->
+
+                      
+                        
+                        
+                    </div><!--//item-inner-->
+                 
+                </div><!--//item-->
+                
+                <div class="item col-sm-4 col-xs-12 x">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="img-responsive" src="assets/images/figure-6.jpg" alt="image">
+                        </div><!--//figure-holder-->
+
+                      
+                       
+                        
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item col-sm-4 col-xs-12 x">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="img-responsive" src="assets/images/figure-7.jpg" alt="image">
+                        </div><!--//figure-holder-->
+
+                      
+                  
+                        
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item col-sm-4 col-xs-12 x">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="img-responsive" src="assets/images/figure-8.jpg" alt="image">
+                        </div><!--//figure-holder-->
+
+                        
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+                <div class="item col-sm-4 col-xs-12 x">
+                    <div class="item-inner">
+                        <div class="figure-holder">
+                            <img class="img-responsive" src="assets/images/figure-9" alt="image">
+                        </div><!--//figure-holder-->
+
+                      
+                     
+                        
+                    </div><!--//item-inner-->
+                </div><!--//item-->
+
+
+        </div><!--//container-->
+    </div><!--//pricing-section-->
+
+    <div id="contact" class="contact-section">
+        <div class="container text-center">
+            <h2 class="section-title">Contáctanos!</h2>
+            <div class="contact-content">
+                <p>Somos un equipo especializado en la moda, así que cualquier duda no dudes en contactarnos y en segundos te estaremos respondiendo!</p>
+                
+            </div>
+            <a class="btn btn-cta btn-primary">Ponerse en contacto</a>
+            
+        </div><!--//container-->
+    </div><!--//contact-section-->
+    
+    <footer class="footer text-center">
+        <div class="container">
+            <p>
+                All rights reserved 2021 by Adrián Castro &copy;
+            </p>
+            
+        </div><!--//container-->
+    </footer>
+     
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>     
+    <script type="text/javascript" src="assets/js/main.js"></script> 
+       
+</body>
+</html> 
+
